@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header><h1>Contact Us</h1></header>
+
+<section>
+<p><strong>Address:</strong> SSS Complex, Shop No 2, Tanuku, Pin 534211</p>
+<p><strong>Email:</strong> flourishconsultancy25@gmail.com</p>
+<p><strong>Phone / WhatsApp:</strong> +91 97058 38374 | +91 70133 92438</p>
+
+<h3>Our Location</h3>
+<iframe
+  src="https://www.google.com/maps?q=SSS%20Complex%20Tanuku%20534211&output=embed"
+  width="100%" height="300" style="border:0;border-radius:8px;" loading="lazy">
+</iframe>
+
+<h3>Send Enquiry via WhatsApp</h3>
+<form onsubmit="sendWA();return false;">
+<input id="n" placeholder="Your Name" required>
+<input id="e" placeholder="Your Email" required>
+<textarea id="m" placeholder="Your Requirement" required></textarea>
+<button type="submit">Send via WhatsApp</button>
+</form>
+
+</section>
+
+<script>
+function sendWA(){
+  let url="https://wa.me/919705838374?text="+encodeURIComponent(
+    "Hello Flourish Consultancy Services\n" +
+    "Name: "+n.value+"\n" +
+    "Email: "+e.value+"\n" +
+    "Message: "+m.value
+  );
+  window.open(url,"_blank");
+}
+</script>
+
+<footer>© 2025 Flourish Consultancy Services</footer>
+
+</body>
+</html>
